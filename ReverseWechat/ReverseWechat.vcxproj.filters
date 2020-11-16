@@ -27,9 +27,30 @@
     <ClInclude Include="ReverseWechat.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="CMainWnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DUILIB_CONFIGURE.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CDialogWnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CFont.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ReverseWechat.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CMainWnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CDialogWnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CFont.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -45,5 +66,11 @@
     <Image Include="ReverseWechat.ico">
       <Filter>资源文件</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="skin\skin.zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="skin\icon.ttf" />
   </ItemGroup>
 </Project>

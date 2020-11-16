@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="550,600" sizebox="4,4,4,4" caption="0,0,0,30" mininfo="550,600" roundcorner="3,3" bktrans="false" >
+    <Font name="宋体" size="12" default="true"/>
+    <Font name="宋体" size="12" bold="true" />
+    <Default name="Label" value="autocalcwidth=&quot;true&quot; textcolor=&quot;#FF454545&quot; " />
+    <Default name="Button" value="autocalcwidth=&quot;true&quot; textcolor=&quot;#FF454545&quot; disabledtextcolor=&quot;#FF454545&quot; " />
+    <Default name="CheckBox" value="cursor=&quot;hand&quot; textcolor=&quot;#FF454545&quot; disabledtextcolor=&quot;#FF888888&quot; width=&quot;10&quot; height=&quot;24&quot; padding=&quot;0,4,0,0&quot; textpadding=&quot;18,0,0,6&quot; align=&quot;left&quot; normalimage=&quot;file='UI\setting\check_normal.png' dest='0,0,14,14'&quot; hotimage=&quot;file='UI\setting\check_hover.png' dest='0,0,14,14'&quot; pushedimage=&quot;file='UI\setting\check_down.png' dest='0,0,14,14'&quot; disabledimage=&quot;file='UI\setting\check_disable.png' dest='0,0,14,14'&quot; selectedimage=&quot;file='UI\setting\checked_normal.png' dest='0,0,14,14'&quot; selectedhotimage=&quot;file='UI\setting\checked_hover.png' dest='0,0,14,14'&quot; selectedpushedimage=&quot;file='UI\setting\checked_down.png' dest='0,0,14,14'&quot; autocalcwidth=&quot;true&quot;"/>
+
+    <VerticalLayout  bkcolor="#FFFFFFFF" bordercolor="#FF47484B" bkimage="file='QQ\UI\bg0.png' corner='100,230,180,0'" bordersize="1" inset="1,1,1,1">
+        <HorizontalLayout name="background" height="30" ><!-- 标题栏 -->
+            <Label name="lab_title" text="DUILIB DEMO--登陆淘宝" textcolor="#FFFFFFFF" textpadding="5,0,0,0" font="1" autocalcwidth="false" width="300"/>
+			<Control />
+			<Button cursor="hand" tooltip="关闭" name="closebtn" width="23" height="18" padding="0,6,0,0" normalimage="QQ\UI\close_normal.png" hotimage="QQ\UI\close_hover.png" pushedimage="QQ\UI\close_down.png" />                     
+        </HorizontalLayout>
+
+        <HorizontalLayout >
+            <TBWeb name="login_browser" url="https://login.taobao.com/member/login.jhtml?spm=a21bo.2017.754894437.1.5af911d9e1LlTZ&f=top&redirectURL=https%3A%2F%2Fitem.manager.tmall.com%2Ftmall%2Fmanager%2Frender.htm" padding="0,0,5,0"></TBWeb>
+        </HorizontalLayout> 
+    </VerticalLayout>
+</Window>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="1000,670" sizebox="4,4,4,4" caption="0,0,0,115" mininfo="960,670" roundcorner="6,6" bktrans="false" trayiconid="102" traytiptext="Redrain 音乐盒 测试版1.0">
+    <Include source="xmls\Default.xml" /> 
+    <VerticalLayout name="background" bkimage="images\default.jpg" bkcolor="#FF01ECFD" bordercolor="#FF47484B" bordersize="1"  >
+        <HorizontalLayout name="MainWndTitle" height="115"><!-- 标题栏 -->
+            <VerticalLayout name="TitleLeft" width="365" inset="15,0,10,0">
+            	<HorizontalLayout height="35">
+            		<Label name="Lbl_Main_Title" text="违规排查" width="200" endellipsis="true" autocalcwidth="false"/>
+					<!--<Label text="aa" name="fontTest" width="50" font="7" />-->
+                    <Control />
+                    
+            	</HorizontalLayout>
+				<Control height="10" />
+				<HorizontalLayout>
+					<Control width="50" />
+					<Button cursor="hand" tooltip="开始排查" name="btn_status_start" width="49" height="49" padding="0,2,0,0" normalimage="images\play_normal.png" hotimage="images\play_hover.png" pushedimage="images\play_down.png" />
+					<Button cursor="hand" tooltip="停止排查"  name="btn_status_stop" width="49" height="49" padding="0,2,0,0" normalimage="images\pause_normal.png" hotimage="images\pause_hover.png" pushedimage="images\pause_down.png" visible="false"/>
+					<VerticalLayout visible="false">
+						<Control height="6" />
+						<HorizontalLayout height="20" inset="50,0,0,0">
+							<Label font="5" text="●" textpadding="0,0,6,4" />
+							<Label font="6" name="label_order_staus" text="下单状态：空闲" width="300" endellipsis="true" autocalcwidth="false"/>
+						</HorizontalLayout>
+						<HorizontalLayout height="20" inset="50,0,0,0">
+							<Label font="5" text="●" textpadding="0,0,6,4" />
+							<Label font="6" name="label_ship_staus" text="发货状态：空闲" width="300" endellipsis="true" autocalcwidth="false"/>
+						</HorizontalLayout>
+
+					</VerticalLayout>
+					
+				</HorizontalLayout>
+            </VerticalLayout>
+        	<VerticalLayout name="Main_Title_Right" >
+        		<HorizontalLayout height="39" >
+        			<Control width="20"/>
+	        		<HorizontalLayout>
+	        			<HorizontalLayout >
+		        			
+				        </HorizontalLayout>
+				        <HorizontalLayout width="46" padding="0,0,8,0">
+							<Button cursor="hand" tooltip="最小化" name="minbtn" width="23" height="18" padding="0,10,0,0" normalimage="images\min_normal.png" hotimage="images\min_hover.png" pushedimage="images\min_down.png" />
+		           			<Button cursor="hand" tooltip="关闭" name="closebtn" width="23" height="18" padding="0,10,0,0" normalimage="images\close_normal.png" hotimage="images\close_hover.png" pushedimage="images\close_down.png" />
+		           		</HorizontalLayout>
+	        		</HorizontalLayout>
+        		</HorizontalLayout>
+
+        	</VerticalLayout>  
+        </HorizontalLayout>
+        <HorizontalLayout ><!-- 主体 -->
+            <VerticalLayout name="LeftTabBk" width="45" bkimage="images\left_tab_normal.png" >
+				<!--
+            	<Option name="LeftTabMusic" width="46" height="62" normalimage="UI\LeftTab\music_normal.png" hotimage="UI\LeftTab\music_hover.png" pushedimage="UI\LeftTab\music_down.png"  group="LeftTab" selectedimage="UI\LeftTab\music_down.png"  selected="true" tooltip="本地列表"/>
+            	<Option name="LeftTabFavorite" width="46" height="62" normalimage="UI\LeftTab\favorite_normal.png" hotimage="UI\LeftTab\favorite_hover.png" pushedimage="UI\LeftTab\favorite_down.png"  group="LeftTab" selectedimage="UI\LeftTab\favorite_down.png" tooltip="网络收藏" />
+            	<Option name="LeftTabRadio" width="46" height="62" normalimage="UI\LeftTab\radio_normal.png" hotimage="UI\LeftTab\radio_hover.png" pushedimage="UI\LeftTab\radio_down.png"  group="LeftTab" selectedimage="UI\LeftTab\radio_down.png"  tooltip="音乐电台"/>
+            	<Option name="LeftTabLocal" width="46" height="62" normalimage="UI\LeftTab\location_normal.png" hotimage="UI\LeftTab\location_hover.png" pushedimage="UI\LeftTab\location_down.png"  group="LeftTab" selectedimage="UI\LeftTab\location_down.png" tooltip="附近" />
+            	<Option name="LeftTabTemp" width="46" height="62" normalimage="UI\LeftTab\temp_normal.png" hotimage="UI\LeftTab\temp_hover.png" pushedimage="UI\LeftTab\temp_down.png"  group="LeftTab" selectedimage="UI\LeftTab\temp_down.png" tooltip="临时播" />
+            	<Option name="LeftTabDownload" width="46" height="62" normalimage="UI\LeftTab\download_normal.png" hotimage="UI\LeftTab\download_hover.png" pushedimage="UI\LeftTab\download_down.png"  group="LeftTab" selectedimage="UI\LeftTab\download_down.png" tooltip="我的下载" />
+            	<Option name="LeftTabMore" width="46" height="62" normalimage="UI\LeftTab\more_normal.png" hotimage="UI\LeftTab\more_hover.png" pushedimage="UI\LeftTab\more_down.png"  group="LeftTab" selectedimage="UI\LeftTab\more_down.png" tooltip="更多" />
+				-->
+            </VerticalLayout>
+            <VerticalLayout>
+            	<HorizontalLayout >
+					<List name="taobao_user_list" 
+						vscrollbar="true" 
+						width="350" 
+						bkimage="file='images\List_bk.png' fade='180'"
+						header="false" 
+						itemhotimage="file='images\List_bk.png' fade='100'"
+						itemhotbkcolor="0x00000000"
+					>
+
+					</List>
+					
+					<!--
+					<VerticalLayout name="taobao_user_list" vscrollbar="true" width="350" bkimage="file='UI\LeftTab\List_bk.png' fade='180'">
+						
+						<VerticalLayout height="50">
+							<Control height="10" />
+							<HorizontalLayout>
+								<Control width="10" />
+								<Control bkimage="file='UI\account\avatar.jpg'" width="40" height="40"/>
+								<Control width="10" />
+								<VerticalLayout width="300">
+									<Label showhtml="true" text="<b>胖墩海海</b>" bordersize="0" width="300" autocalcwidth="false" textpadding="0,0,0,0" textcolor="#FF505050" />
+									<Label showhtml="true" text="状态:空闲"  autocalcwidth="false" bordersize="0" width="300" textcolor="#FF505050" endellipsis="true" />
+									<Progress value="20" width="200" height="4" padding="0,6,0,0" bkimage="UI\progress\bg.jpg" foreimage="UI\progress\fg.jpg" min="0" max="100" value="0"/> 
+								</VerticalLayout>
+							</HorizontalLayout >
+						</VerticalLayout>
+						
+					</VerticalLayout >
+					-->
+					<Control width="1" />
+					<List name="taobao_violation_list" 
+						vscrollbar="true" 
+						bkimage="file='images\List_bk.png' fade='200'"
+						header="false" 
+						itemhotimage="file='images\List_bk.png' fade='100'"
+						itemhotbkcolor="0x00000000"
+					>
+
+					</List>
+
+            	</HorizontalLayout>
+            </VerticalLayout>
+	        <VerticalLayout width="45" bkimage="images\left_tab_normal.png"></VerticalLayout>   
+        </HorizontalLayout> 
+        <HorizontalLayout name="Main_Status" height="30" inset="77,0,0,0" bkimage="images\status_bk.png"><!-- 状态栏 -->
+            <Button cursor="hand" name="btn_add_seller" tooltip="添加淘宝账号" width="31" height="30" padding="0,0,0,0" normalimage="images\add_normal.png" hotimage="images\add_hover.png" pushedimage="images\add_down.png" />
+			<!--<Button cursor="hand" name="btn_system_settings" tooltip="系统设置" width="31" height="30" padding="40,0,0,0" normalimage="UI\statusbar\setting_normal.png" hotimage="UI\statusbar\setting_hover.png" pushedimage="UI\statusbar\setting_down.png" />
+            <Button cursor="hand" name="btn_about" tooltip="关于" width="31" height="30" padding="40,0,0,0" normalimage="UI\statusbar\locate_normal.png" hotimage="UI\statusbar\locate_hover.png" pushedimage="UI\statusbar\locate_down.png" />
+			<Button cursor="hand" name="btn_pay_devtools" tooltip="支付调试" visible="false" width="31" height="30" padding="40,0,0,0" normalimage="UI\statusbar\search_normal.png" hotimage="UI\statusbar\search_hover.png" pushedimage="UI\statusbar\search_down.png" />
+            -->
+   			<Control />
+            <Label name="uaStatus" text="" />
+			<Control width="38" />
+            <Control width="7" height="7" padding="0,23,0,0" bkimage="images\sizebox.png" />
+        </HorizontalLayout>
+    </VerticalLayout>
+</Window>

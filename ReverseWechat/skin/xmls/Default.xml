@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DefaultConfig>
+	<Font name="微软雅黑" size="13"/>
+    <Font name="微软雅黑" size="16"/>
+    <Font name="微软雅黑" size="22" id="3"/>
+    <Font name="微软雅黑" size="13" bold="true" />
+    <Font name="微软雅黑" size="22" id="5"/>
+    <Font size="13" id="6"/>
+    <Font name="iconfont" bold="true" size="16" id="7" />
+    <Default name="Label" value="textcolor=&quot;#FFFFFFFF&quot; autocalcwidth=&quot;true&quot;" />
+    <Default name="Button" value="textcolor=&quot;#FFFFFFFF&quot; autocalcwidth=&quot;true&quot;"/>
+    <Default name="VScrollBar" shared="true" value="width=&quot;13&quot; button1normalimage=&quot;file='images\vscroll_up_normal.png'&quot; button1hotimage=&quot;file='images\vscroll_up_hover.png'&quot; button1pushedimage=&quot;file='images\vscroll_up_down.png' &quot; button1disabledimage=&quot;file='images\vscroll_up_disable.png'&quot; button2normalimage=&quot;file='images\vscroll_down_normal.png'&quot; button2hotimage=&quot;file='images\vscroll_down_hover.png'&quot; button2pushedimage=&quot;file='images\vscroll_down_down.png'&quot; button2disabledimage=&quot;file='images\vscroll_down_disable.png'&quot; thumbnormalimage=&quot;file='images\thumb_normal.png' &quot; thumbhotimage=&quot;file='images\thumb_hover.png' &quot; thumbpushedimage=&quot;file='images\thumb_down.png' &quot; thumbdisabledimage=&quot;file='images\thumb_disable.png' &quot;  bkcolor=&quot;#FF000000&quot;" />    
+</DefaultConfig>
+

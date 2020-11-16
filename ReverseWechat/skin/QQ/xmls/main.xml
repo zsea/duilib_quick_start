@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window size="995,650" mininfo="300,300" caption="0,0,0,40" sizebox="4,4,4,4" roundcorner="4,4,4,4">
+    <Font id="0" name="微软雅黑" size="12" bold="false" default="true" />
+    <Font id="1" name="微软雅黑" size="12" bold="true"/>
+    <Font id="2" name="微软雅黑" size="12" bold="true" underline="true" />
+    <Default shared="true" name="VScrollBar" value="button1normalimage=&quot;file='QQ\UI\scrollbar.png' source='0,0,16,16'&quot; button1hotimage=&quot;file='QQ\UI\scrollbar.png' source='16,0,32,16,16'&quot; button1pushedimage=&quot;file='QQ\UI\scrollbar.png' source='32,0,48,16'&quot; button2normalimage=&quot;file='QQ\UI\scrollbar.png' source='0,32,16,48'&quot; button2hotimage=&quot;file='QQ\UI\scrollbar.png' source='16,32,32,48'&quot; button2pushedimage=&quot;file='QQ\UI\scrollbar.png' source='32,32,48,48'&quot; thumbnormalimage=&quot;file='QQ\UI\scrollbar.png' source='0,48,16,64' corner='0,2,0,2'&quot; thumbhotimage=&quot;file='QQ\UI\scrollbar.png' source='16,48,32,64' corner='0,2,0,2'&quot; thumbpushedimage=&quot;file='QQ\UI\scrollbar.png' source='32,48,48,64' corner='0,2,0,2'&quot; bknormalimage=&quot;file='QQ\UI\scrollbar.png' source='0,16,16,32'&quot;" />
+    <Default name="CheckBox" value="cursor=&quot;hand&quot; textcolor=&quot;#FF454545&quot; disabledtextcolor=&quot;#FF888888&quot; width=&quot;10&quot; height=&quot;24&quot; padding=&quot;0,4,0,0&quot; textpadding=&quot;18,0,0,6&quot; align=&quot;left&quot; normalimage=&quot;file='QQ\UI\check_normal.png' dest='0,0,14,14'&quot; hotimage=&quot;file='QQ\UI\check_hover.png' dest='0,0,14,14'&quot; pushedimage=&quot;file='QQ\UI\check_down.png' dest='0,0,14,14'&quot; disabledimage=&quot;file='QQ\UI\check_disable.png' dest='0,0,14,14'&quot; selectedimage=&quot;file='QQ\UI\checked_normal.png' dest='0,0,14,14'&quot; selectedhotimage=&quot;file='QQ\UI\checked_hover.png' dest='0,0,14,14'&quot; selectedpushedimage=&quot;file='QQ\UI\checked_down.png' dest='0,0,14,14'&quot; autocalcwidth=&quot;true&quot;"/>
+    <VerticalLayout bkcolor="#FFFFFFFF" bordercolor="#FF47484B" bordersize="1" bkimage="file='QQ\UI\bg0.png' corner='100,230,180,0'" hole="true">
+        <HorizontalLayout height="35">
+            <!--标题栏+最大化+最小化+还原+关闭-->
+            <Control width="10" />
+            <Label font="1" textcolor="#FFFFFFFF" name="Lbl_Main_Title" text="DUILIB DEMO" width="140" endellipsis="true" autocalcwidth="false"/>
+            <Button hottextcolor="0xFFFF0000" cursor="hand" font="2" textcolor="#FFFFFFFF" name="loginbtn" text="未登陆" width="40" />
+            <Label font="1" width="200" visible="false" textcolor="#FFFFFFFF" name="lab_user" text="" />
+            <Control />
+            <HorizontalLayout width="95" padding="0,0,0,0">
+                <Button cursor="hand" tooltip="最小化" name="minbtn" width="28" height="19" padding="0,0,0,0" normalimage="QQ\UI\btn_mini_normal.png" hotimage="QQ\UI\btn_mini_highlight.png" pushedimage="QQ\UI\btn_mini_down.png" />
+                <Button cursor="hand" tooltip="最大化" name="maxbtn" width="28" height="19" padding="0,0,0,0" normalimage="QQ\UI\btn_max_normal.png" hotimage="QQ\UI\btn_max_highlight.png" pushedimage="QQ\UI\btn_max_down.png" />
+                <Button cursor="hand" tooltip="还原" name="restorebtn" visible="false" width="28" height="19" padding="0,0,0,0" normalimage="QQ\UI\btn_restore_normal.png" hotimage="QQ\UI\btn_restore_highlight.png" pushedimage="QQ\UI\btn_restore_down.png" />
+                <Button cursor="hand" tooltip="关闭" name="closebtn" width="39" height="19" padding="0,0,0,0" normalimage="QQ\UI\btn_close_normal.png" hotimage="QQ\UI\btn_close_highlight.png" pushedimage="QQ\UI\btn_close_down.png" />
+            </HorizontalLayout>
+        </HorizontalLayout>
+        <Control height="40" />
+        <HorizontalLayout inset="64,0,0,0" height="32" childpadding="2">
+            <Option name="homepage" bindtablayoutname="mainOptions" bindtabindex="0" text="标签一" align="left" width="100" height="32" textcolor="#FFD5EEFC" textpadding="32,0,0,0" group="mainoptions" normalimage="file='QQ\ICON\1.png' dest='4,4,28,28'" selectedimage="file='QQ\ICON\1.png' dest='4,4,28,28'" selectedtextcolor="#FF7C7D7E" selectedbkcolor="#FFFFFFFF" selected="true" cursor="hand" enabled="true" />
+            <Option name="compare" bindtablayoutname="mainOptions" bindtabindex="1" text="标签二" align="left" width="100" height="32" textcolor="#FFD5EEFC" textpadding="32,0,0,0" group="mainoptions" normalimage="file='QQ\ICON\2.png' dest='4,4,28,28'" selectedimage="file='QQ\ICON\2.png' dest='4,4,28,28'" selectedtextcolor="#FF7C7D7E" selectedbkcolor="#FFFFFFFF" selected="false" cursor="hand" enabled="true" />
+            <Option name="query" bindtablayoutname="mainOptions" bindtabindex="2" text="标签三" align="left" width="100" height="32" textcolor="#FFD5EEFC" textpadding="32,0,0,0" group="mainoptions" normalimage="file='QQ\ICON\3.png' dest='4,4,28,28'" selectedimage="file='QQ\ICON\3.png' dest='4,4,28,28'" selectedtextcolor="#FF7C7D7E" selectedbkcolor="#FFFFFFFF" selected="false" cursor="hand" enabled="true" />
+        </HorizontalLayout>
+        <VerticalLayout bkcolor="#FFFFFFFF" padding="1,0,1,1">
+            <TabLayout name="mainOptions" selectedid="0">
+                <VerticalLayout>
+                    <HorizontalLayout height="42">
+                        <Combo padding="5,8,5,8" name="query_category" height="24" itemtextpadding="9,5,5,5" textpadding="9,5,5,5" width="250" normalimage="file='QQ\UI\combo_normal.png' corner='1,0,20,0'" hotimage="file='QQ\UI\combo_down.png' corner='1,0,20,0'" pushedimage="file='QQ\UI\combo_down.png' corner='1,0,20,0'" focusedimage="file='QQ\UI\combo_down.png' corner='1,0,20,0'" disabledimage="file='QQ\UI\combo_disable.png' corner='1,0,20,0'">
+                            <!--<ListLabelElement height="24" text="==全部类目==" selected="true" />-->
+                            <ListLabelElement height="24" text="" selected="true" />
+                            <ListLabelElement height="24" text="腾讯QQ专区" />
+                            <ListLabelElement height="24" text="网络游戏点卡" />
+                            <ListLabelElement height="24" text="网游装备/游戏币/帐号/代练" />
+                            <ListLabelElement height="24" text="服饰配件/皮带/帽子/围巾" />
+                            <ListLabelElement height="24" text="流行男鞋" />
+                            <ListLabelElement height="24" text="男装" />
+                            <ListLabelElement height="24" text="女士内衣/男士内衣/家居服" />
+                            <ListLabelElement height="24" text="女鞋" />
+                            <ListLabelElement height="24" text="女装/女士精品" />
+                            <ListLabelElement height="24" text="箱包皮具/热销女包/男包" />
+                            <ListLabelElement height="24" text="3C数码配件" />
+                            <ListLabelElement height="24" text="DIY电脑" />
+                            <ListLabelElement height="24" text="MP3/MP4/iPod/录音笔" />
+                            <ListLabelElement height="24" text="办公设备/耗材/相关服务" />
+                            <ListLabelElement height="24" text="笔记本电脑" />
+                            <ListLabelElement height="24" text="电脑硬件/显示器/电脑周边" />
+                            <ListLabelElement height="24" text="电玩/配件/游戏/攻略" />
+                            <ListLabelElement height="24" text="电子元器件市场" />
+                            <ListLabelElement height="24" text="二手数码" />
+                            <ListLabelElement height="24" text="品牌台机/品牌一体机/服务器" />
+                            <ListLabelElement height="24" text="平板电脑/MID" />
+                            <ListLabelElement height="24" text="闪存卡/U盘/存储/移动硬盘" />
+                            <ListLabelElement height="24" text="手机" />
+                            <ListLabelElement height="24" text="数码相机/单反相机/摄像机" />
+                            <ListLabelElement height="24" text="网络设备/网络相关" />
+                            <ListLabelElement height="24" text="文具电教/文化用品/商务用品" />
+                            <ListLabelElement height="24" text="厨房电器" />
+                            <ListLabelElement height="24" text="大家电" />
+                            <ListLabelElement height="24" text="个人护理/保健/按摩器材" />
+                            <ListLabelElement height="24" text="家庭保健" />
+                            <ListLabelElement height="24" text="生活电器" />
+                            <ListLabelElement height="24" text="影音电器" />
+                            <ListLabelElement height="24" text="ZIPPO/瑞士军刀/眼镜" />
+                            <ListLabelElement height="24" text="彩妆/香水/美妆工具" />
+                            <ListLabelElement height="24" text="美发护发/假发" />
+                            <ListLabelElement height="24" text="美容护肤/美体/精油" />
+                            <ListLabelElement height="24" text="饰品/流行首饰/时尚饰品新" />
+                            <ListLabelElement height="24" text="手表" />
+                            <ListLabelElement height="24" text="珠宝/钻石/翡翠/黄金" />
+                            <ListLabelElement height="24" text="奶粉/辅食/营养品/零食" />
+                            <ListLabelElement height="24" text="童鞋/婴儿鞋/亲子鞋" />
+                            <ListLabelElement height="24" text="童装/婴儿装/亲子装" />
+                            <ListLabelElement height="24" text="玩具/童车/益智/积木/模型" />
+                            <ListLabelElement height="24" text="婴童用品" />
+                            <ListLabelElement height="24" text="孕妇装/孕产妇用品/营养" />
+                            <ListLabelElement height="24" text="床上用品" />
+                            <ListLabelElement height="24" text="电子/电工" />
+                            <ListLabelElement height="24" text="基础建材" />
+                            <ListLabelElement height="24" text="家居饰品" />
+                            <ListLabelElement height="24" text="家装主材" />
+                            <ListLabelElement height="24" text="居家布艺" />
+                            <ListLabelElement height="24" text="全屋定制" />
+                            <ListLabelElement height="24" text="商业/办公家具" />
+                            <ListLabelElement height="24" text="特色手工艺" />
+                            <ListLabelElement height="24" text="五金/工具" />
+                            <ListLabelElement height="24" text="住宅家具" />
+                            <ListLabelElement height="24" text="装修设计/施工/监理" />
+                            <ListLabelElement height="24" text="OTC药品/医疗器械/计生用品" />
+                            <ListLabelElement height="24" text="保健食品/膳食营养补充食品" />
+                            <ListLabelElement height="24" text="餐饮具" />
+                            <ListLabelElement height="24" text="茶" />
+                            <ListLabelElement height="24" text="成人用品/情趣用品" />
+                            <ListLabelElement height="24" text="厨房/烹饪用具" />
+                            <ListLabelElement height="24" text="传统滋补营养品" />
+                            <ListLabelElement height="24" text="家庭/个人清洁工具" />
+                            <ListLabelElement height="24" text="节庆用品/礼品" />
+                            <ListLabelElement height="24" text="酒类" />
+                            <ListLabelElement height="24" text="居家日用" />
+                            <ListLabelElement height="24" text="咖啡/麦片/冲饮" />
+                            <ListLabelElement height="24" text="粮油米面/南北干货/调味品" />
+                            <ListLabelElement height="24" text="零食/坚果/特产" />
+                            <ListLabelElement height="24" text="收纳整理" />
+                            <ListLabelElement height="24" text="水产肉类/新鲜蔬果/熟食" />
+                            <ListLabelElement height="24" text="洗护清洁剂/卫生巾/纸/香薰" />
+                            <ListLabelElement height="24" text="电动车/配件/交通工具" />
+                            <ListLabelElement height="24" text="户外/登山/野营/旅行用品" />
+                            <ListLabelElement height="24" text="运动/瑜伽/健身/球迷用品" />
+                            <ListLabelElement height="24" text="运动包/户外包/配件" />
+                            <ListLabelElement height="24" text="运动服/休闲服装" />
+                            <ListLabelElement height="24" text="运动鞋new" />
+                            <ListLabelElement height="24" text="自行车/骑行装备/零配件" />
+                            <ListLabelElement height="24" text="宠物/宠物食品及用品" />
+                            <ListLabelElement height="24" text="度假线路/签证送关/旅游服务" />
+                            <ListLabelElement height="24" text="古董/邮币/字画/收藏" />
+                            <ListLabelElement height="24" text="景点门票/演艺演出/周边游" />
+                            <ListLabelElement height="24" text="乐器/吉他/钢琴/配件" />
+                            <ListLabelElement height="24" text="模玩/动漫/周边/cos/桌游" />
+                            <ListLabelElement height="24" text="书籍/杂志/报纸" />
+                            <ListLabelElement height="24" text="特价酒店/特色客栈/公寓旅馆" />
+                            <ListLabelElement height="24" text="音乐/影视/明星/音像" />
+                            <ListLabelElement height="24" text="本地化生活服务" />
+                            <ListLabelElement height="24" text="餐饮美食卡券" />
+                            <ListLabelElement height="24" text="电影/演出/体育赛事" />
+                            <ListLabelElement height="24" text="房产/租房/新房/二手房/委托服务" />
+                            <ListLabelElement height="24" text="个性定制/设计服务/DIY" />
+                            <ListLabelElement height="24" text="购物提货券" />
+                            <ListLabelElement height="24" text="教育培训" />
+                            <ListLabelElement height="24" text="理财" />
+                            <ListLabelElement height="24" text="网店/网络服务/软件" />
+                            <ListLabelElement height="24" text="网络店铺代金/优惠券" />
+                            <ListLabelElement height="24" text="鲜花速递/花卉仿真/绿植园艺" />
+                            <ListLabelElement height="24" text="线下消费卡" />
+                            <ListLabelElement height="24" text="阿里通信专属类目" />
+                            <ListLabelElement height="24" text="搬运/仓储/物流设备" />
+                            <ListLabelElement height="24" text="包装" />
+                            <ListLabelElement height="24" text="标准件/零部件/工业耗材" />
+                            <ListLabelElement height="24" text="到家业务" />
+                            <ListLabelElement height="24" text="纺织面料/辅料/配套" />
+                            <ListLabelElement height="24" text="机械设备" />
+                            <ListLabelElement height="24" text="家装灯饰光源" />
+                            <ListLabelElement height="24" text="金属材料及制品" />
+                            <ListLabelElement height="24" text="美容美体仪器" />
+                            <ListLabelElement height="24" text="农机/农具/农膜" />
+                            <ListLabelElement height="24" text="农用物资" />
+                            <ListLabelElement height="24" text="拍卖会专用" />
+                            <ListLabelElement height="24" text="其他" />
+                            <ListLabelElement height="24" text="汽车零部件/养护/美容/维保" />
+                            <ListLabelElement height="24" text="清洗/食品/商业设备" />
+                            <ListLabelElement height="24" text="润滑/胶粘/试剂/实验室耗材" />
+                            <ListLabelElement height="24" text="商务/设计服务" />
+                            <ListLabelElement height="24" text="室内设计师" />
+                            <ListLabelElement height="24" text="淘女郎" />
+                            <ListLabelElement height="24" text="橡塑材料及制品" />
+                            <ListLabelElement height="24" text="畜牧/养殖物资" />
+                            <ListLabelElement height="24" text="婴童尿裤" />
+                            <ListLabelElement height="24" text="智能设备" />
+                            <ListLabelElement height="24" text="众筹" />
+                            <ListLabelElement height="24" text="装修服务" />
+                            <ListLabelElement height="24" text="摩托车/装备/配件" />
+                            <ListLabelElement height="24" text="汽车用品/电子/清洗/改装" />
+                            <ListLabelElement height="24" text="新车/二手车" />
+                        </Combo>
+                        <Combo padding="5,8,5,8" name="query_grade" height="24" itemtextpadding="9,5,5,5" textpadding="9,5,5,5" width="80" normalimage="file='QQ\UI\combo_normal.png' corner='1,0,20,0'" hotimage="file='QQ\UI\combo_down.png' corner='1,0,20,0'" pushedimage="file='QQ\UI\combo_down.png' corner='1,0,20,0'" focusedimage="file='QQ\UI\combo_down.png' corner='1,0,20,0'" disabledimage="file='QQ\UI\combo_disable.png' corner='1,0,20,0'">
+                            <ListLabelElement height="24" text="" selected="true" />
+                            <ListLabelElement height="24" text="一般违规" />
+                            <ListLabelElement height="24" text="严重违规" />
+                            <ListLabelElement height="24" text="市场管理" />
+                        </Combo>
+                        <Combo padding="5,8,5,8" name="query_type" height="24" itemtextpadding="9,5,5,5" textpadding="9,5,5,5" width="80" normalimage="file='QQ\UI\combo_normal.png' corner='1,0,20,0'" hotimage="file='QQ\UI\combo_down.png' corner='1,0,20,0'" pushedimage="file='QQ\UI\combo_down.png' corner='1,0,20,0'" focusedimage="file='QQ\UI\combo_down.png' corner='1,0,20,0'" disabledimage="file='QQ\UI\combo_disable.png' corner='1,0,20,0'">
+                            <ListLabelElement height="24" selected="true" />
+                            <ListLabelElement height="24" text="盗图" />
+                            <ListLabelElement height="24" text="知识产权" />
+                            <ListLabelElement height="24" text="禁售" />
+                            <ListLabelElement height="24" text="售假" />
+                        </Combo>
+                        <Button cursor="hand" name="query_btn_search" textcolor="#FFFFFFFF" text="搜索" width="70" height="25" padding="5,8,5,8" normalimage="file='QQ\UI\Ok_normal.png' corner='5,5,5,5'" hotimage="file='QQ\UI\Ok_hover.png' corner='5,5,5,5'" pushedimage="file='QQ\UI\Ok_down.png' corner='5,5,5,5'" />
+                    </HorizontalLayout>
+                    <Control height="1" />
+                    <List padding="4,0,4,0" name="query_list" itemtextpadding="10,10,10,10" vscrollbar="true" itemlinecolor="#FFE6E6E6" itemshowrowline="true">
+                        <ListHeader bkcolor="#FFEEEEEE" height="50">
+                            <ListHeaderItem text="主图" width="50" minwidth="16" sepwidth="1" align="left" />
+                            <ListHeaderItem text="违规时间" width="150" minwidth="16" sepwidth="1" align="center" />
+                            <ListHeaderItem text="商品标题" width="380" minwidth="16" sepwidth="1" align="left" />
+                            <ListHeaderItem text="类目" width="180" minwidth="16" sepwidth="1" align="left" />
+                            <ListHeaderItem text="违规等级" width="70" minwidth="16" sepwidth="1" align="left" />
+                            <ListHeaderItem text="违规类型" width="150" minwidth="16" sepwidth="1" align="left" />
+                            <ListHeaderItem text="违规原因" minwidth="16" sepwidth="1" align="left" />
+                            <!--<ListHeaderItem text="违规时间" width="150" minwidth="16" sepwidth="1" align="center" />-->
+                        </ListHeader>
+                        <!--<ListLabelElement text="123456789" height="40" />
+                    <ListLabelElement text="987654321" height="40" />-->
+                    </List>
+                    <HorizontalLayout inset="0,4,0,0" height="40" name="pager">
+                        <!--
+                    <Button cursor="hand" name="btn_page" textcolor="#FF000000" text="1" width="25" height="25" padding="5,0,5,8" normalimage="file='QQ\UI\Cancel_normal.png' corner='5,5,5,5'" hotimage="file='QQ\UI\Cancel_hover.png' corner='5,5,5,5'" pushedimage="file='QQ\UI\Cancel_down.png' corner='5,5,5,5'" />
+                    -->
+                    </HorizontalLayout>
+                </VerticalLayout>
+                
+                <VerticalLayout>
+                    <HorizontalLayout height="42">
+                        <Combo padding="5,8,5,8" name="com_status" height="24" itemtextpadding="9,5,5,5" textpadding="9,5,5,5" width="80" normalimage="file='QQ\UI\combo_normal.png' corner='1,0,20,0'" hotimage="file='QQ\UI\combo_down.png' corner='1,0,20,0'" pushedimage="file='QQ\UI\combo_down.png' corner='1,0,20,0'" focusedimage="file='QQ\UI\combo_down.png' corner='1,0,20,0'" disabledimage="file='QQ\UI\combo_disable.png' corner='1,0,20,0'">
+                            <ListLabelElement height="24" text="全部" selected="true" />
+                            <ListLabelElement height="24" text="出售中" />
+                            <ListLabelElement height="24" text="仓库中" />
+                        </Combo>
+                        <Combo padding="5,8,5,8" name="com_categories" height="24" itemtextpadding="9,5,5,5" textpadding="9,5,5,5" width="200" normalimage="file='QQ\UI\combo_normal.png' corner='1,0,20,0'" hotimage="file='QQ\UI\combo_down.png' corner='1,0,20,0'" pushedimage="file='QQ\UI\combo_down.png' corner='1,0,20,0'" focusedimage="file='QQ\UI\combo_down.png' corner='1,0,20,0'" disabledimage="file='QQ\UI\combo_disable.png' corner='1,0,20,0'">
+
+                        </Combo>
+                        <Edit padding="5,8,5,8" bordersize="1" name="com_keywords" text="" width="200" height="24" bordercolor="#FFC5C5C5" focusbordercolor="#FF5AAFF7" textpadding="9,5,5,5" textcolor="#FF454545" bkcolor="#00000000" nativebkcolor="#FFFFFFFF"  />
+                        <CheckBox name="com_grade_0" height="24" width="80" text="一般违规" selected="true" padding="0,14,0,0" textpadding="18,0,0,6"/>
+                        <CheckBox name="com_grade_1" height="24" width="80" text="严重违规" selected="true" padding="0,14,0,0" textpadding="18,0,0,6"/>
+                        <CheckBox name="com_grade_2" height="24" width="80" text="市场管理" selected="true" padding="0,14,0,0" textpadding="18,0,0,6"/>
+                        <Button cursor="hand" name="com_btn_start" textcolor="#FFFFFFFF" text="开始" width="70" height="25" padding="5,8,5,8" normalimage="file='QQ\UI\Ok_normal.png' corner='5,5,5,5'" hotimage="file='QQ\UI\Ok_hover.png' corner='5,5,5,5'" pushedimage="file='QQ\UI\Ok_down.png' corner='5,5,5,5'" />
+                        <Button enabled="false" cursor="hand" name="com_btn_cancel" text="取消" width="70" height="25" padding="5,8,5,8" normalimage="file='QQ\UI\button_normal.png' corner='5,5,5,5'" hotimage="file='QQ\UI\button_hover.png' corner='5,5,5,5'" pushedimage="file='QQ\UI\button_down.png' corner='5,5,5,5'"  /> 
+                    </HorizontalLayout>
+                    <Control height="1" />
+                    
+                    <List padding="4,0,4,0" name="compare_list" itemtextpadding="10,10,10,10" vscrollbar="true" itemlinecolor="#FFE6E6E6" itemshowrowline="true">
+                        <ListHeader bkcolor="#FFEEEEEE" height="50">
+                            <ListHeaderItem text="商品信息" width="580" minwidth="580" sepwidth="1" align="left" />
+                            <ListHeaderItem text="匹配程度" width="100" sepwidth="1" align="left" />
+                            <ListHeaderItem text="违规信息" minwidth="580" sepwidth="1" align="left" />
+                        </ListHeader>
+                    </List>
+                    <HorizontalLayout height="24">
+                        <Label padding="4,0,0,0" height="24" width="200" name="compare_status" text="未登陆。" />   
+                    </HorizontalLayout>
+                </VerticalLayout>
+                <HorizontalLayout>
+                    <Control />
+                    <Control bordersize="2" bordercolor="#FFFFFFFF" bkimage="QQ\UI\cover.jpg" width="1200" height="1200" />
+                    <Control />
+                </HorizontalLayout>
+            </TabLayout>
+        </VerticalLayout>
+    </VerticalLayout>
+</Window>
